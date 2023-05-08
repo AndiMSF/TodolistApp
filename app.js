@@ -12,7 +12,7 @@ dotenv.config()
 
 // Connect Database
 mongoose.set('strictQuery',false)
-mongoose.connect('mongodb+srv://'+process.env.DB_USERNAME+':'+process.env.DB_PASSWORD+'@cluster0.vqcsdra.mongodb.net/30Days',{useNewUrlParser:true,useUnifiedTopology:true}, function(err){
+mongoose.connect('mongodb+srv://'+process.env.DB_USERNAME+':'+process.env.DB_PASSWORD+'@cluster0.vqcsdra.mongodb.net/todolistCyclic',{useNewUrlParser:true,useUnifiedTopology:true}, function(err){
   if(err){
     console.log(err);
   } else {
